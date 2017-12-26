@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		208750DA698066A1A94FDA4D /* libPods-CMColorfulAlert.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9701C2312541400AB7FCEF0A /* libPods-CMColorfulAlert.a */; };
+		2136F9261FF253B000E8FEB4 /* IMG_0052.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2136F9251FF253AF00E8FEB4 /* IMG_0052.PNG */; };
+		2136F9301FF257EC00E8FEB4 /* cm_ca_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2136F92D1FF257EC00E8FEB4 /* cm_ca_close@3x.png */; };
+		2136F9311FF257EC00E8FEB4 /* cm_btn_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2136F92E1FF257EC00E8FEB4 /* cm_btn_background@2x.png */; };
+		2136F9321FF257EC00E8FEB4 /* cm_ca_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2136F92F1FF257EC00E8FEB4 /* cm_ca_close@2x.png */; };
 		21EE58201FF09C1D0065166A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EE581F1FF09C1D0065166A /* AppDelegate.m */; };
 		21EE58231FF09C1D0065166A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EE58221FF09C1D0065166A /* ViewController.m */; };
 		21EE58261FF09C1D0065166A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21EE58241FF09C1D0065166A /* Main.storyboard */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2136F9251FF253AF00E8FEB4 /* IMG_0052.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0052.PNG; sourceTree = "<group>"; };
+		2136F92D1FF257EC00E8FEB4 /* cm_ca_close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cm_ca_close@3x.png"; sourceTree = "<group>"; };
+		2136F92E1FF257EC00E8FEB4 /* cm_btn_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cm_btn_background@2x.png"; sourceTree = "<group>"; };
+		2136F92F1FF257EC00E8FEB4 /* cm_ca_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cm_ca_close@2x.png"; sourceTree = "<group>"; };
 		21EE581B1FF09C1D0065166A /* CMColorfulAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMColorfulAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21EE581E1FF09C1D0065166A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		21EE581F1FF09C1D0065166A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +82,7 @@
 				21EE58211FF09C1D0065166A /* ViewController.h */,
 				21EE58221FF09C1D0065166A /* ViewController.m */,
 				21EE58241FF09C1D0065166A /* Main.storyboard */,
+				2136F9251FF253AF00E8FEB4 /* IMG_0052.PNG */,
 				21EE58271FF09C1D0065166A /* Assets.xcassets */,
 				21EE58291FF09C1D0065166A /* LaunchScreen.storyboard */,
 				21EE582C1FF09C1D0065166A /* Info.plist */,
@@ -85,6 +94,9 @@
 		21EE58341FF09C590065166A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2136F92E1FF257EC00E8FEB4 /* cm_btn_background@2x.png */,
+				2136F92F1FF257EC00E8FEB4 /* cm_ca_close@2x.png */,
+				2136F92D1FF257EC00E8FEB4 /* cm_ca_close@3x.png */,
 				21EE58351FF09C8C0065166A /* CMColorfulAlert.h */,
 				21EE58361FF09C8C0065166A /* CMColorfulAlert.m */,
 			);
@@ -169,8 +181,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2136F9301FF257EC00E8FEB4 /* cm_ca_close@3x.png in Resources */,
+				2136F9311FF257EC00E8FEB4 /* cm_btn_background@2x.png in Resources */,
 				21EE582B1FF09C1D0065166A /* LaunchScreen.storyboard in Resources */,
 				21EE58281FF09C1D0065166A /* Assets.xcassets in Resources */,
+				2136F9261FF253B000E8FEB4 /* IMG_0052.PNG in Resources */,
+				2136F9321FF257EC00E8FEB4 /* cm_ca_close@2x.png in Resources */,
 				21EE58261FF09C1D0065166A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
