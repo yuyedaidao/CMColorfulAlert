@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		208750DA698066A1A94FDA4D /* libPods-CMColorfulAlert.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9701C2312541400AB7FCEF0A /* libPods-CMColorfulAlert.a */; };
 		21EE58201FF09C1D0065166A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EE581F1FF09C1D0065166A /* AppDelegate.m */; };
 		21EE58231FF09C1D0065166A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EE58221FF09C1D0065166A /* ViewController.m */; };
 		21EE58261FF09C1D0065166A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21EE58241FF09C1D0065166A /* Main.storyboard */; };
 		21EE58281FF09C1D0065166A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21EE58271FF09C1D0065166A /* Assets.xcassets */; };
 		21EE582B1FF09C1D0065166A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21EE58291FF09C1D0065166A /* LaunchScreen.storyboard */; };
 		21EE582E1FF09C1D0065166A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EE582D1FF09C1D0065166A /* main.m */; };
+		21EE58371FF09C8C0065166A /* CMColorfulAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EE58361FF09C8C0065166A /* CMColorfulAlert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,11 @@
 		21EE582A1FF09C1D0065166A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21EE582C1FF09C1D0065166A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21EE582D1FF09C1D0065166A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		21EE58351FF09C8C0065166A /* CMColorfulAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMColorfulAlert.h; sourceTree = "<group>"; };
+		21EE58361FF09C8C0065166A /* CMColorfulAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMColorfulAlert.m; sourceTree = "<group>"; };
+		766EA2BDDFA4319C9783BEFE /* Pods-CMColorfulAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMColorfulAlert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CMColorfulAlert/Pods-CMColorfulAlert.debug.xcconfig"; sourceTree = "<group>"; };
+		848A70042CE9A8C56A81C44E /* Pods-CMColorfulAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMColorfulAlert.release.xcconfig"; path = "Pods/Target Support Files/Pods-CMColorfulAlert/Pods-CMColorfulAlert.release.xcconfig"; sourceTree = "<group>"; };
+		9701C2312541400AB7FCEF0A /* libPods-CMColorfulAlert.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CMColorfulAlert.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				208750DA698066A1A94FDA4D /* libPods-CMColorfulAlert.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +50,11 @@
 		21EE58121FF09C1D0065166A = {
 			isa = PBXGroup;
 			children = (
+				21EE58341FF09C590065166A /* Classes */,
 				21EE581D1FF09C1D0065166A /* CMColorfulAlert */,
 				21EE581C1FF09C1D0065166A /* Products */,
+				8DA1B6FAC0A8DFD61D35A3B9 /* Pods */,
+				7246CAED24591FD9CAF8E5C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +82,32 @@
 			path = CMColorfulAlert;
 			sourceTree = "<group>";
 		};
+		21EE58341FF09C590065166A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				21EE58351FF09C8C0065166A /* CMColorfulAlert.h */,
+				21EE58361FF09C8C0065166A /* CMColorfulAlert.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7246CAED24591FD9CAF8E5C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9701C2312541400AB7FCEF0A /* libPods-CMColorfulAlert.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DA1B6FAC0A8DFD61D35A3B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				766EA2BDDFA4319C9783BEFE /* Pods-CMColorfulAlert.debug.xcconfig */,
+				848A70042CE9A8C56A81C44E /* Pods-CMColorfulAlert.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21EE58311FF09C1D0065166A /* Build configuration list for PBXNativeTarget "CMColorfulAlert" */;
 			buildPhases = (
+				2894B4DD8367A62F16B1B8DC /* [CP] Check Pods Manifest.lock */,
 				21EE58171FF09C1D0065166A /* Sources */,
 				21EE58181FF09C1D0065166A /* Frameworks */,
 				21EE58191FF09C1D0065166A /* Resources */,
+				4C7395EB308170F1B61AF4EB /* [CP] Embed Pods Frameworks */,
+				0F73526162861F8622197AEA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,6 +177,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F73526162861F8622197AEA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CMColorfulAlert/Pods-CMColorfulAlert-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2894B4DD8367A62F16B1B8DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CMColorfulAlert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C7395EB308170F1B61AF4EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CMColorfulAlert/Pods-CMColorfulAlert-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		21EE58171FF09C1D0065166A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -144,6 +235,7 @@
 			files = (
 				21EE58231FF09C1D0065166A /* ViewController.m in Sources */,
 				21EE582E1FF09C1D0065166A /* main.m in Sources */,
+				21EE58371FF09C8C0065166A /* CMColorfulAlert.m in Sources */,
 				21EE58201FF09C1D0065166A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,11 +368,13 @@
 		};
 		21EE58321FF09C1D0065166A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 766EA2BDDFA4319C9783BEFE /* Pods-CMColorfulAlert.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GP4MMMES25;
 				INFOPLIST_FILE = CMColorfulAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wqy.CMColorfulAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,11 +384,13 @@
 		};
 		21EE58331FF09C1D0065166A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 848A70042CE9A8C56A81C44E /* Pods-CMColorfulAlert.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GP4MMMES25;
 				INFOPLIST_FILE = CMColorfulAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wqy.CMColorfulAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
