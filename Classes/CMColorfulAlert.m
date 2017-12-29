@@ -19,21 +19,23 @@ static CGFloat const kButtonSpace = 12.0f;
 @property (strong, nonatomic) UIView *containerView;
 
 @property (copy ,nonatomic) void (^buttonClickBlock)(NSInteger);
-
+@property (copy ,nonatomic) void (^cancelClickBlock)(void);
 
 @end
 
 @implementation CMColorfulAlert
 
-+ (instancetype)createWithTitleIcon:(UIImage *)titleIcon title:(NSString *)title contentImage:(UIImage *)contentImage contentLabels:(NSArray<NSString *> *)contentLabels buttonTitles:(NSArray<NSString *> *)buttonTitles buttonClickBlock:(void (^)(NSInteger))buttonClickBlock {
-    CMColorfulAlert *alert = [[CMColorfulAlert alloc] initWithTitleIcon:titleIcon title:title contentImage:contentImage contentLabels:contentLabels buttonTitles:buttonTitles buttonClickBlock:buttonClickBlock];
++ (instancetype)createWithTitleIcon:(UIImage *)titleIcon title:(NSString *)title contentImage:(UIImage *)contentImage contentLabels:(NSArray<NSString *> *)contentLabels buttonTitles:(NSArray<NSString *> *)buttonTitles buttonClickBlock:(void (^)(NSInteger))buttonClickBlock cancelClickBlock:(void (^)(void))cancelClickBlock {
+    CMColorfulAlert *alert = [[CMColorfulAlert alloc] initWithTitleIcon:titleIcon title:title contentImage:contentImage contentLabels:contentLabels buttonTitles:buttonTitles buttonClickBlock:buttonClickBlock cancelClickBlock: cancelClickBlock];
     
     return alert;
 }
 
-- (instancetype)initWithTitleIcon:(UIImage *)titleIcon title:(NSString *)title contentImage:(UIImage *)contentImage contentLabels:(NSArray<NSString *> *)contentLabels buttonTitles:(NSArray<NSString *> *)buttonTitles buttonClickBlock:(void (^)(NSInteger))buttonClickBlock {
+- (instancetype)initWithTitleIcon:(UIImage *)titleIcon title:(NSString *)title contentImage:(UIImage *)contentImage contentLabels:(NSArray<NSString *> *)contentLabels buttonTitles:(NSArray<NSString *> *)buttonTitles buttonClickBlock:(void (^)(NSInteger))buttonClickBlock cancelClickBlock:(void (^)(void))cancelClickBlock {
     if (self = [super init]) {
         self.backgroundColor = [UIColor clearColor];
+        _buttonClickBlock = buttonClickBlock;
+        _cancelClickBlock = cancelClickBlock;
         self.backgroundView = ({
             UIView *view = [[UIView alloc] init];
             [self addSubview:view];

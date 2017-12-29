@@ -11,7 +11,7 @@
 
 @interface CMColorfulAlert : UIView
 
-+(instancetype)createWithTitleIcon:(UIImage *)titleIcon title:(NSString *)title contentImage:(UIImage *)contentImage contentLabels:(NSArray<NSString *> *)texts buttonTitles:(NSArray<NSString *> *)buttonTitles buttonClickBlock: (void (^)(NSInteger index))buttonClickBlock;
++(instancetype)createWithTitleIcon:(UIImage *)titleIcon title:(NSString *)title contentImage:(UIImage *)contentImage contentLabels:(NSArray<NSString *> *)texts buttonTitles:(NSArray<NSString *> *)buttonTitles buttonClickBlock: (void (^)(NSInteger index))buttonClickBlock cancelClickBlock:(void (^)(void))cancelClickBlock;
 - (void)show;
 - (void)showInView:(UIView *)view;
 
