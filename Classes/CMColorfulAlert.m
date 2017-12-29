@@ -194,6 +194,7 @@ static CGFloat const kButtonSpace = 12.0f;
 
 
 - (void)cancelAction:(UIButton *)sender {
+    !_cancelClickBlock ? : _cancelClickBlock();
     [self hide];
 }
 
