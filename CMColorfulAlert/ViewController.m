@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    CMColorfulAlert *alert = [CMColorfulAlert createWithTitleIcon:[UIImage imageNamed:@"kaoqin_daka_start_b"] title:@"正经标题" contentImage:[UIImage imageNamed:@"kaoqin_congratulaions"] contentLabels:@[@"我是一个粉刷匠,粉刷本领强,哟吼吼吼吼", @"我要把那新房子刷得更难看"] buttonTitles:@[@"点一个试试", @"再点一个试试"] buttonClickBlock:nil];
+    CMColorfulAlert *alert = [CMColorfulAlert createWithTitleIcon:[UIImage imageNamed:@"kaoqin_daka_start_b"] title:@"正经标题" contentImage:[UIImage imageNamed:@"kaoqin_congratulaions"] contentLabels:@[@"我是一个粉刷匠,粉刷本领强,哟吼吼吼吼", @"我要把那新房子刷得更难看"] buttonTitles:@[@"点一个试试", @"再点一个试试"] buttonClickBlock:nil cancelClickBlock:nil];
     [alert showInView:self.view];
     self.alert = alert;
 

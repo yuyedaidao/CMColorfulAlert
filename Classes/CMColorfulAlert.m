@@ -20,6 +20,7 @@ static CGFloat const kButtonSpace = 12.0f;
 
 @property (copy ,nonatomic) void (^buttonClickBlock)(NSInteger);
 @property (copy ,nonatomic) void (^cancelClickBlock)(void);
+@property (weak, nonatomic) id observer;
 
 @end
 
@@ -188,10 +189,18 @@ static CGFloat const kButtonSpace = 12.0f;
             make.bottom.equalTo(_containerView).offset(-kPadding);
         }];
         
+        _observer = [[NSNotificationCenter defaultCenter] addObserverForName:@"a+b+c" object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+            [self removeFromSuperview];
+        }];;
     }
     return self;
 }
 
+- (void)dealloc {
+    if (_observer) {
+        [[NSNotificationCenter defaultCenter] removeObserver:_observer];
+    }
+}
 
 - (void)cancelAction:(UIButton *)sender {
     !_cancelClickBlock ? : _cancelClickBlock();
@@ -203,13 +212,19 @@ static CGFloat const kButtonSpace = 12.0f;
     [self hide];
 }
 
+- (void)removeOthers {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"a+b+c" object:nil];
+}
+
 - (void)show {
+    [self removeOthers];
     UIWindow *window = UIApplication.sharedApplication.keyWindow;
     self.frame = [UIScreen mainScreen].bounds;
     [window addSubview:self];
 }
 
 - (void)showInView:(UIView *)view {
+    [self removeOthers];
     UIView *containerView = view;
     if (containerView == nil) {
         containerView = UIApplication.sharedApplication.keyWindow;
